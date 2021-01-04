@@ -1,2 +1,2 @@
 # DM
-A beauty networking site
+Beauty cosmetics shopping site
