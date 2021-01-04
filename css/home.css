@@ -1,0 +1,134 @@
+#common-header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.slide-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: #000;
+}
+
+.top-nav {
+    width: 100%;
+    background: rgb(245, 245, 245);
+}
+
+.top-nav-inner {
+    height: 50px;
+}
+
+.location {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+}
+
+.top-nav-list {
+    width: 900px;
+    height: 100%;
+    float: right;
+}
+
+.top-nav-list>li {
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-inner {
+    height: 100px;
+}
+
+.logo-inner img {
+    height: 100px;
+}
+
+.search {}
+
+.main-nav {
+    width: 100%;
+}
+
+.main-nav-inner {
+    height: 50px;
+}
+
+.main-nav-menu {
+    width: 100%;
+}
+
+.main-nav-menu>li {
+    list-style: none;
+    float: left;
+}
+
+.main-nav-menu>li>a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.goods-type {
+    position: relative;
+}
+
+.main-nav-menu>li>a:hover {
+    color: red;
+}
+
+.goods-type-list {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: -500px;
+    display: none;
+}
+
+.goods-type-list>li {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    background: #000;
+}
+
+#main {
+    width: 100%;
+}
+
+.main-banner {
+    background: rgb(150, 150, 250);
+}
+
+.LB {
+    width: 100%;
+    height: 418.84px;
+    padding-top: 30px;
+}
+
+.banner-imgbox {
+    width: 100%;
+    position: relative;
+}
+
+.banner-imgbox>li img {
+    width: 1200px;
+}
