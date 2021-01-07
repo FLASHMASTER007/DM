@@ -780,7 +780,8 @@
 
 .info-text {
     color: #b0b0b0;
-    padding: 15px 0 0 100px;
+    text-align: center;
+    padding: 15px 0 0 0px;
 }
 
 .sites {
@@ -799,4 +800,21 @@
 
 .info-links-img {
     height: 30px;
+}
+
+.info-link1 {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #d7237e;
+}
+
+.link1-a {
+    color: #fff;
+}
+
+.link1-a:hover {
+    color: #c4c2c2;
 }
