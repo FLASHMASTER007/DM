@@ -7,7 +7,8 @@
     <title>得美</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2183615_6teqv39bv3m.css">
+    <link rel="stylesheet" href="./swiper/swiper.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2183615_c7wec34je3.css">
 </head>
 
 <body>
@@ -16,83 +17,815 @@
         <header id=common-header>
             <nav class="top-nav">
                 <div class="top-nav-inner container">
-                    <div class="location">深圳<span>&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="iconfont icon-arrLeft-fill"></i>
+                    <div class="top-nav-location">深圳<span>&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="iconfont icon-arrLeft-fill"></i>
                     </div>
                     <ul class="top-nav-list">
-                        <li><a href="#">登录<i class="iconfont icon-arrLeft-fill"></i></a></li>
-                        <li><a href="#">注册</a></li>
-                        <li><a href="#">签到有礼</a></li>
-                        <li><a href="#">我的订单</a></li>
-                        <li><a href="#">我的空间<i class="iconfont icon-arrLeft-fill"></i></a></li>
-                        <li><a href="#">会员俱乐部<i class="iconfont icon-arrLeft-fill"></i></a></li>
-                        <li><a href="#">客户服务<i class="iconfont icon-arrLeft-fill"></i></a></li>
+                        <li>
+                            <a href="#" class="change-color">登录<i class="iconfont icon-arrLeft-fill"></i></a>
+                        </li>
+                        <li><a href="#" class="change-color">注册</a></li>
+                        <li><a href="#" class="change-color">签到有礼</a></li>
+                        <li><a href="#" class="change-color">我的订单</a></li>
+                        <li><a href="#" class="change-color">我的空间<i class="iconfont icon-arrLeft-fill"></i></a></li>
+                        <li><a href="#" class="change-color">会员俱乐部<i class="iconfont icon-arrLeft-fill"></i></a></li>
+                        <li class="top-nav-service">
+                            <a href="#" class="change-color">客户服务<i class="iconfont icon-arrLeft-fill"></i></a>
+                            <ul class="service-list">
+                                <li><a href="#" class="change-color">联系客服</a></li>
+                                <li><a href="#" class="change-color">帮助中心</a></li>
+                                <li><a href="#" class="change-color">知识产权投诉</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#"><i class="iconfont icon-shouji"></i>手机版</a></li>
                         <li><a href="#">更多<i class="iconfont icon-arrLeft-fill"></i></a></li>
                     </ul>
                 </div>
             </nav>
+
             <div class="logo">
                 <div class="logo-inner container">
                     <a href="#"><img src="./images/logo.png" alt=""></a>
                     <a href="#"><img src="./images/logo-1.jpg" alt=""></a>
+                    <div class="shop-car"><i class="iconfont icon-gouwudai3-copy"></i><a href="#">购物车</a></div>
                     <div class="search">
                         <input type="text">
+                        <a href="#" class="search-icon"><span class="iconfont icon-soushuo"></span></a>
+                        <ul class="guide-list">
+                            <li>
+                                <a href="#">保湿</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">面膜</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">洗面奶</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">补水</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">香水</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">眼霜</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">口红</a><span class="line">|</span>
+                            </li>
+                            <li>
+                                <a href="#">BB霜</a>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
             <nav class="main-nav">
                 <div class="main-nav-inner container">
                     <ul class="main-nav-menu">
-                        <li>
-                            <a href="#" class="goods-type" style="background: #000;color: #fff;cursor:default;">商品分类
-                                <ul class="goods-type-list">
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>美妆</li>
-                                    <li>哈哈</li>
-                                </ul>
-                            </a>
-                        </li>
-                        <li><a href="#" style="font-weight: bold;color: red;">首页</a></li>
-                        <li><a href="#">3折疯抢</a></li>
-                        <li><a href="#">唯品快抢</a></li>
-                        <li><a href="#">唯品奥莱</a></li>
-                        <li><a href="#">品牌清仓</a></li>
-                        <li><a href="#">女装</a></li>
-                        <li><a href="#">母婴</a></li>
-                        <li><a href="#">家电</a></li>
-                        <li><a href="#">美妆</a></li>
-                        <li><a href="#">鞋包</a></li>
-                        <li><a href="#">更多</a></li>
+                        <li><a href="#" style="font-weight: bolder;">首页</a></li>
+                        <li><a href="#" class="change-color">3折疯抢</a></li>
+                        <li><a href="#" class="change-color">唯品快抢</a></li>
+                        <li><a href="#" class="change-color">唯品奥莱</a></li>
+                        <li><a href="#" class="change-color">品牌清仓</a></li>
+                        <li><a href="#" class="change-color">女装</a></li>
+                        <li><a href="#" class="change-color">母婴</a></li>
+                        <li><a href="#" class="change-color">家电</a></li>
+                        <li><a href="#" class="change-color">美妆</a></li>
+                        <li><a href="#" class="change-color">鞋包</a></li>
+                        <li><a href="#" class="change-color">更多<i class="iconfont icon-arrow"></i></a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <div class="slide-nav">
+            <ul class="slide-nav-list">
+                <li class="item"><i class="iconfont icon-zhanghao"></i></li>
+                <li class="item"><i class="iconfont icon-gouwudai3-copy"></i></li>
+                <li class="item"><i class="iconfont icon-coupons"></i></li>
+                <li class="item"><i class="iconfont icon-xihuan"></i></li>
+                <li class="item"><i class="iconfont icon-shoucang1"></i></li>
+                <li class="item"><i class="iconfont icon-lishijilu"></i></li>
+                <li class="item"><i class="iconfont icon-shouji"></i></li>
+            </ul>
+            <div class="go-top"><i class="iconfont icon-dingbu"></i></div>
+        </div>
 
+        <div class="main-banner">
+            <div class="main-banner-inner container">
+                <ul class="goods-type-list">
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">推荐品牌</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">护肤</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">彩妆</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">香氛</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">个人护理</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">男士专区</a><i class="iconfont icon-youjiantou"></i></li>
+                    <li class="goods-type-li"><a href="#" class="goods-type-item">奢品美妆</a><i class="iconfont icon-youjiantou"></i></li>
+                </ul>
+                <div class="LB">
+                    <div class="swiper-container  aa">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./images/ban1.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./images/ban2.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./images/ban3.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./images/ban4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+
+                        <!-- 如果需要滚动条 -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+                <div class="block1">
+                    <ul class="span1">
+                        <li class="span1-item" style="border-radius: 10px 0 0 0;">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-shangpin"></i></li>
+                                    <li class="span1-item-li">
+                                        秒杀
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="span1-item">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-jinqian-fanli"></i></li>
+                                    <li class="span1-item-li">
+                                        金钱返利
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="span1-item" style="border-radius: 0 10px 0 0;">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-lihe"></i></li>
+                                    <li class="span1-item-li">
+                                        礼盒
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="span1-item" style="border-radius:0 0 0 10px;">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-jifen"></i></li>
+                                    <li class="span1-item-li">
+                                        积分
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="span1-item">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-huiyuan"></i></li>
+                                    <li class="span1-item-li">
+                                        会员
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="span1-item" style="border-radius: 0 0 10px 0;">
+                            <a href="#" class="span1-item-icons">
+                                <ul>
+                                    <li class="span1-item-li"><i class="iconfont icon-yunshu"></i></li>
+                                    <li class="span1-item-li">
+                                        运输
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="span2">
+                        <li class="span2-item">
+                            <a href="#"><img src="./images/span2-img-1.jpg" alt="" class="span2-img"></a>
+                        </li>
+                        <li class="span2-item">
+                            <a href="#"><img src="./images/span2-img-2.jpg" alt="" class="span2-img"></a>
+                        </li>
+                        <li class="span2-item">
+                            <a href="#"><img src="./images/span2-img-3.jpg" alt="" class="span2-img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="main">
-            <div class="main-banner">
-                <div class="main-banner-inner container">
-                    <div class="LB">
-                        <ul class="banner-imgbox">
-                            <li>
-                                <a href="#"><img src="./images/LB-images1.jpg" alt=""></a>
+            <div class="main-inner container">
+                <div class="block2">
+                    <div class="block-title">
+                        <h1 class="title">闪购</h1>
+                    </div>
+                    <ul class="span3">
+                        <li class="span3-item">
+                            <div class="span3-item-top">14:00场</div>
+                            <div class="span3-item-middle1"><i class="iconfont icon-shandian"></i></div>
+                            <div class="span3-item-middle2">距离结束还有</div>
+                            <div class="span3-item-bottom"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-banner">
+                    <a href="#"><img class="block-banner-img" src="./images/block2-banner.jpg" alt=""></a>
+                </div>
+                <div class="block3">
+                    <div class="block-title">
+                        <h1 class="title">手机</h1>
+                        <div class="title-right">
+                            <a href="#" class="change-color title-right-link">查看全部<i class="iconfont icon-yuanyoujiantou"></i></a>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <a href="#"><img class="span5-img" src="./images/span5-img.jpeg" alt=""></a>
+                    </div>
+                    <div class="goods-list">
+                        <ul class="span6">
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
                             </li>
-                            <li>
-                                <a href="#"><img src="./images/LB-images2.jpg" alt=""></a>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4e75e528fb468aee107f551179aa0799.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d880ff45a9a3b70527770e01521fc939.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cf7a05df86a858a1f391a0378d8c27d.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-banner">
+                    <a href="#"><img class="block-banner-img" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt=""></a>
+                </div>
+                <div class="block4">
+                    <div class="block-title">
+                        <h1 class="title">家电</h1>
+                        <ul class="tab-list">
+                            <li>热门</li>
+                            <li>电视影音</li>
+                        </ul>
+                    </div>
+                    <div class="span7">
+                        <a href="#"><img class="span7-img" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45c4de5f15f6dc9946e5d0827fd96d71.jpg?thumb=1&w=293&h=375&f=webp&q=90" alt=""></a>
+                        <a href="#"><img class="span7-img span7-img-top" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e03c0fe4af4d613603f22aaa8e0ea00.jpg?thumb=1&w=293&h=375&f=webp&q=90" alt=""></a>
+                    </div>
+                    <div class="goods-list">
+                        <ul class="span6">
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef4c68fed730ec26bf2fa0ff620975c5.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">Redmi红米电视 70英寸</li>
+                                        <li class="span6-item-middle2">70英寸震撼巨屏，4K画质，细腻如真
+                                        </li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef4c68fed730ec26bf2fa0ff620975c5.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d880ff45a9a3b70527770e01521fc939.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cf7a05df86a858a1f391a0378d8c27d.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-part">
+                                <a href="#">
+                                    <div class="span6-part1">
+                                        <ul>
+                                            <li class="part-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=125&h=125&f=webp&q=90" class="span6-part-img" alt=""></li>
+                                            <li class="part-middle1">
+                                                米家互联网烟灶套装(天然气)
+                                            </li>
+                                            <li class="part-bottom">
+                                                2998元
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="span6-part1">
+                                        <ul>
+                                            <li class="part-top"><i class="iconfont icon-yuanyoujiantou1"></i></li>
+                                            <li class="part-middle1">
+                                                米家互联网烟灶套装(天然气)
+                                            </li>
+                                            <li class="part-bottom">
+                                                2998元
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="span6-part2"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-banner">
+                    <a href="#"><img class="block-banner-img" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt=""></a>
+                </div>
+                <div class="block5">
+                    <div class="block-title">
+                        <h1 class="title">智能</h1>
+                        <ul class="tab-list">
+                            <li>热门</li>
+                            <li>安防</li>
+                            <li>出行</li>
+                        </ul>
+                    </div>
+                    <div class="span7">
+                        <a href="#"><img class="span7-img" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/45c23f5b9a927b2dc49c25277e07727c.jpg?thumb=1&w=293&h=375&f=webp&q=90"></a>
+                        <a href="#"><img class="span7-img span7-img-top" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a660ce095e8f553a9ed1515265f4e9fc.jpg?thumb=1&w=293&h=375&f=webp&q=90" alt=""></a>
+                    </div>
+                    <div class="goods-list">
+                        <ul class="span6">
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/011dd8493ad62f3793dbb63d9fbd3bc0.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米「小爱老师]
+                                        </li>
+                                        <li class="span6-item-middle2">英语提分利器
+                                        </li>
+                                        <li class="span6-item-bottom">999元</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ef4c68fed730ec26bf2fa0ff620975c5.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/de2f71a797a74e1ca70f1fb4570bc026.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/13f10e47913f9dc82e6c6a6199f413cd.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d880ff45a9a3b70527770e01521fc939.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cf7a05df86a858a1f391a0378d8c27d.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="span6-item-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a260090e0e08770b0bd865845a4b4ab.jpg?thumb=1&w=250&h=250&f=webp&q=90" class="span6-item-img" alt=""></li>
+                                        <li class="span6-item-middle1">小米11</li>
+                                        <li class="span6-item-middle2">很牛逼</li>
+                                        <li class="span6-item-bottom">3999起</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="span6-part">
+                                <a href="#">
+                                    <div class="span6-part1">
+                                        <ul>
+                                            <li class="part-top"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=125&h=125&f=webp&q=90" class="span6-part-img" alt=""></li>
+                                            <li class="part-middle1">
+                                                米家互联网烟灶套装(天然气)
+                                            </li>
+                                            <li class="part-bottom">
+                                                2998元
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="span6-part1">
+                                        <ul>
+                                            <li class="part-top"><i class="iconfont icon-yuanyoujiantou1"></i></li>
+                                            <li class="part-middle1">
+                                                <h4 class="part-more">浏览更多</h4>
+                                            </li>
+                                            <li class="part-bottom">
+                                                <p class="part-small">热门</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="span6-part2"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-banner">
+                    <a href="#"><img class="block-banner-img" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9880db34d227b6c1df5b45cb7df4f465.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt=""></a>
+                </div>
+                <div class="block6">
+                    <div class="block-title">
+                        <h1 class="title">视频</h1>
+                        <div class="title-right">
+                            <a href="#" class="change-color title-right-link">查看全部<i class="iconfont icon-yuanyoujiantou"></i></a>
+                        </div>
+                    </div>
+                    <div class="video-list">
+                        <ul class="video">
+                            <li class="video-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="video-imgbox"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=370&h=225&f=webp&q=90" class="video-img" alt="">
+                                            <span class="video-play"><i class="iconfont icon-play"></i></span>
+                                        </li>
+                                        <li class="span6-item-middle1">视频一</li>
+                                        <li class="span6-item-middle2">跨年去哪儿玩？</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="video-imgbox"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=370&h=225&f=webp&q=90" class="video-img" alt="">
+                                            <span class="video-play"><i class="iconfont icon-play"></i></span>
+                                        </li>
+                                        <li class="span6-item-middle1">视频一</li>
+                                        <li class="span6-item-middle2">跨年去哪儿玩？</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="video-imgbox"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=370&h=225&f=webp&q=90" class="video-img" alt="">
+                                            <span class="video-play"><i class="iconfont icon-play"></i></span>
+                                        </li>
+                                        <li class="span6-item-middle1">视频一</li>
+                                        <li class="span6-item-middle2">跨年去哪儿玩？</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="video-item">
+                                <a href="#">
+                                    <ul>
+                                        <li class="video-imgbox"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=370&h=225&f=webp&q=90" class="video-img" alt="">
+                                            <span class="video-play"><i class="iconfont icon-play"></i></span>
+                                        </li>
+                                        <li class="span6-item-middle1">视频一</li>
+                                        <li class="span6-item-middle2">跨年去哪儿玩？</li>
+                                    </ul>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="footer">
+            <div class="footer-inner container">
+                <div class="footer-service">
+                    <ul class="footer-service-list">
+                        <li style="border-left: none;" class="footer-service-list-item">
+                            <a href="#"><i class="iconfont icon-weixiu"></i>预约维修服务</a>
+                        </li>
+                        <li class="footer-service-list-item">
+                            <a href="#"><a href="#"><i class="iconfont icon-sevenday"></i>7天无理由退换</a></a>
+                        </li>
+                        <li class="footer-service-list-item">
+                            <a href="#"><a href="#"><i class="iconfont icon-tian"></i>15天无理由换货</a></a>
+                        </li>
+                        <li class="footer-service-list-item">
+                            <a href="#"><a href="#"><i class="iconfont icon-lipin"></i>满99包邮</a></a>
+                        </li>
+                        <li class="footer-service-list-item">
+                            <a href="#"><a href="#"><i class="iconfont icon-location"></i>520余家售后网点</a></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <dl class="span8">
+                        <dt>帮助中心</dt>
+                        <dd><a href="#">账户管理</a></dd>
+                        <dd><a href="#">购物指南</a></dd>
+                        <dd><a href="#">订单操作</a></dd>
+                    </dl>
+                    <div class="connect">
+                        <p class="connect-tel">400-100-5678</p>
+                        <h4 class="connect-time">8:00-18:00（仅收市话费）</h4>
+                        <a href="" class="connect-talk"><i class="iconfont icon-liaotian"></i>人工客服</a>
+                        <div class="connect-follow">关注小米：<i class="iconfont icon-weibo"></i><i class="iconfont icon-weixin"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info">
+            <div class="info-inner container">
+                <div class="info-logo"><img src="./images/logo.png" alt=""></div>
+                <div class="info-text">
+                    <p class="sites">
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a><span class="line">|</span>
+                        <a href="#" class="change-color">商城</a>
+                    </p>
+                    <p class="sites">
+                        <a href="#" class="change-color">中国消费者协会</a><span class="line">|</span>
+                        <a href="#" class="change-color">中国消费者协会</a><span class="line">|</span>
+                        <a href="#" class="change-color">中国消费者协会</a>
+                    </p>
+                    <p class="sites">Copyright © 2008-2021 vip.com，All Rights Reserved 使用本网站即表示接受
+                        <a href="#" class="change-color">唯品会用户协议</a>。版权所有
+                        <a href="#" change-color>广州唯品会电子商务有限公司</a>
+                    </p>
+                    <p class="sites">
+                        <a href="#" class="cahnge-color"><img src="https://a.vpimg4.com/upload/actpics/act/sp/police_icon.png" alt="">粤公网安备 44010302111111号</a>
+                        <a href="#" class="cahnge-color">粤ICP备08114786号</a>
+                        <a href="#" class="change-color">增值业务经营许可证：粤B2-20170777 </a>
+                        <a href="#" class="change-color">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    </p>
+                    <p class="sites">
+                        <a href="#" class="change-color">经营主体证照</a>
+                        <a href="#" class="change-color">风险监测信息</a>
+                        <a href="#" class="change-color">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                        <a href="#" class="change-color"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                        <a href="#" class="change-color">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                    </p>
+                    <div class="info-links">
+                        <a href="#"><img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="" class="info-links-img"></a>
+                        <a href="#"><img src="https://s01.mifile.cn/i/v-logo-2.png" alt="" class="info-links-img"></a>
+                        <a href="#"><img src="https://s01.mifile.cn/i/v-logo-1.png" alt="" class="info-links-img"></a>
+                        <a href="#"><img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/71e1ac5b0af91a30a715b04f8aa80f6b.png" alt="" class="info-links-img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./swiper/swiper.js"></script>
+        <script src="./js/jquery1.12.4.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                // direction: 'vertical', // 垂直切换选项
+                loop: true, // 循环模式选项
+                autoplay: true, //自动轮播选项
+                //如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true, //可以点击
+                },
+
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // 如果需要滚动条
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+            })
+        </script>
+
+        <script>
+            //最顶部的导航栏动画
+            $('.top-nav-service').mouseover(function() {
+                $('.service-list').slideDown()
+            })
+            $('.top-nav-service').mouseleave(function() {
+                    $('.service-list').slideUp()
+                })
+                //block4上面的那个切换动画
+            $('.tab-list li').mouseover(function() {
+                $(this).addClass('tab-active')
+            })
+            $('.tab-list li').mouseleave(function() {
+                    $(this).removeClass('tab-active')
+                })
+                // $('.tab-list').mouseover(function() {
+                //     $(this).removeClass('tab-active')
+                // })
+        </script>
+
     </body>
 
 </html>
