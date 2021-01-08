@@ -409,6 +409,7 @@
     margin-left: 55px;
     background: #f03867;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .addcar-list>li {
