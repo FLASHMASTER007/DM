@@ -9,9 +9,9 @@ $('#login-button').click(function() {
         dataType: 'json',
         success: function(data) {
             if (data.code == 1) {　　　　　　　　　　　　
-                location.href = 'http://localhost/DM/index.html';
+                location.href = 'http://localhost/DM/login.html';
             } else {
-                alert("登录失败");
+                alert("注册失败");
             }
         },
         error: function() {
