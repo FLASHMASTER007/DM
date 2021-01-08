@@ -38,6 +38,7 @@
         <div class="cart-tab4"><input type="checkbox" class="check-btn"><span class="tab4-color">维品自营</span></div>
         <div class="cart-tab5">
             <div class="ul-box">
+
                 <ul class="tab5-ul">
                     <li class="tab5-li1">
                         <input type="checkbox" class="check-btn"><img src="http://a.vpimg4.com/upload/merchandise/pdcvis/2020/07/14/156/d996443a-290e-49b5-80cb-83aec54d1f11.jpg" alt="" class="tab5-img">
@@ -52,33 +53,12 @@
                     <li class="tab5-li3">￥405</li>
                     <li class="tab5-li4">
                         <div class="num">
-                            <div class="num-del">-</div>
-                            <div class="num-text">1</div>
-                            <div class="num-add">+</div>
+                            <input type="button" class="num-list-top" value="-">
+                            <input type="button" class="num-list-middle" value="1">
+                            <input type="button" class="num-list-bottom" value="+">
                         </div>
                     </li>
-                    <li class="tab5-li5">删除</li>
-                </ul>
-                <ul class="tab5-ul">
-                    <li class="tab5-li1">
-                        <input type="checkbox" class="check-btn"><img src="http://a.vpimg4.com/upload/merchandise/pdcvis/2020/07/14/156/d996443a-290e-49b5-80cb-83aec54d1f11.jpg" alt="" class="tab5-img">
-
-                    </li>
-                    <li class="tab5-li2">
-                        <div class="tab5-text"><a href="#" class="text">【全新缎光质地】TOM FORD 柔雾缎采唇膏 TF新80（黑... </a>
-                            <p class="size">尺码：3.3g </p>
-                            <p class="no">不支持退换</p>
-                        </div>
-                    </li>
-                    <li class="tab5-li3">￥405</li>
-                    <li class="tab5-li4">
-                        <div class="num">
-                            <div class="num-del">-</div>
-                            <div class="num-text">1</div>
-                            <div class="num-add">+</div>
-                        </div>
-                    </li>
-                    <li class="tab5-li5">删除</li>
+                    <li class="tab5-li5"><span class="tab5-li5-del">删除</span></li>
                 </ul>
             </div>
         </div>
@@ -167,6 +147,8 @@
             </div>
         </div>
     </div>
+    <script src="./js/jquery-2.0.3.min.js"></script>
+    <script src="./js/shopcart.js"></script>
 </body>
 
 </html>
