@@ -2,6 +2,12 @@ $('#login-button').click(function() {
     var name = $("#username").val();
     var pwd = $("#pwd").val();
     console.log(name, pwd);
+    if (name == "") {
+        alert('请输入账号名')
+    }
+    if (pwd == "") {
+        alert('请输入密码')
+    }
     $.ajax({
         url: 'http://localhost/DM/a.json',
         type: 'post',
