@@ -254,8 +254,8 @@
                             <div class="span3-item-middle1"><i class="iconfont icon-shandian"></i></div>
                             <div class="span3-item-middle2">距离结束还有</div>
                             <div class="span3-item-bottom">
-                                <span class="span3-item-bottom-min">54</span>:
-                                <sapn class="span3-item-bottom-sec">30</sapn>
+                                <span class="span3-item-bottom-min">30分</span>:
+                                <sapn class="span3-item-bottom-sec">00秒</sapn>
                             </div>
                         </li>
                     </ul>
@@ -837,21 +837,6 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <script src="./swiper/swiper.js"></script>
         <script src="./js/jquery1.12.4.min.js"></script>
         <script src="./js/home.js"></script>
@@ -897,9 +882,9 @@
                 $('.ewm-list').slideDown()
             })
             $('.top-nav-ewm').mouseleave(function() {
-                    $('.ewm-list').slideUp('fast')
-                })
-                //侧边栏动画
+                $('.ewm-list').slideUp('fast')
+            });
+            //侧边栏动画
             $('.item1').mouseover(function() {
                 $('.alert1').fadeIn()
             })
@@ -941,19 +926,25 @@
             })
             $('.item7').mouseleave(function() {
                 $('.alert7').fadeOut('fast')
+            });
+            //导航栏固定
+            var head = $('#common-header').height()
+            $(window).scroll(function() {
+                var topScr = $(window).scrollTop();
+                if (topScr > 180) {
+                    $(".main-nav").addClass("fixed");
+                } else {
+                    $(".main-nav").removeClass("fixed");
+                }
+
+            });
+            //回到顶部
+            $('.go-top').click(function() {
+                $(window).scrollTop(0)
             })
 
 
             //block4上面的那个切换动画
-            $('.tab-list li').mouseover(function() {
-                $(this).addClass('tab-active')
-            })
-            $('.tab-list li').mouseleave(function() {
-                    $(this).removeClass('tab-active')
-                })
-                // $('.tab-list').mouseover(function() {
-                //     $(this).removeClass('tab-active')
-                // })
         </script>
 
     </body>

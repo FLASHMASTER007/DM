@@ -1,4 +1,5 @@
 $('#login-button').click(function() {
+    window.onload = "../login.html"
     var name = $("#username").val();
     var pwd = $("#pwd").val();
     console.log(name, pwd);
@@ -13,15 +14,8 @@ $('#login-button').click(function() {
         type: 'post',
         data: { 'name': name, 'pwd': pwd },
         dataType: 'json',
-        success: function(data) {
-            if (data.code == 1) {　　　　　　　　　　　　
-                location.href = 'http://localhost/DM/login.html';
-            } else {
-                alert("注册失败");
-            }
-        },
-        error: function() {
-            console.log('请求出错！');
+        success: function(data) {　　　　　　　　　　
+            location.href = 'http://localhost/DM/login.html';
         }
     })
 });

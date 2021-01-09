@@ -1,4 +1,25 @@
-$('.span6-item-top').mouseenter(function() {
-    console.log(1);
-    $('.span6-item-top').animate({ right: '10px' }, 'normal')
-})
+var intDiff = parseInt(1800); //倒计时总秒数量
+function timer(intDiff) {
+    window.setInterval(function() {
+        // var day = 0,
+        //     hour = 0,
+        minute = 0,
+            second = 0; //时间默认值        
+        if (intDiff > 0) {
+            // day = Math.floor(intDiff / (60 * 60 * 24));
+            // hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+            minute = Math.floor(intDiff / 60);
+            second = Math.floor(intDiff) - (minute * 60);
+        }
+        if (minute <= 9) minute = '0' + minute;
+        if (second <= 9) second = '0' + second;
+        // $('#day_show').html(day + "天");
+        // $('#hour_show').html('<s id="h"></s>' + hour + '时');
+        $('.span3-item-bottom-min').html('<s></s>' + minute + '分');
+        $('.span3-item-bottom-sec').html('<s></s>' + second + '秒');
+        intDiff--;
+    }, 1000);
+}
+$(function() {
+    timer(intDiff);
+});
