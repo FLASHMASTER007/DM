@@ -1,5 +1,5 @@
-$('#login-button').click(function() {
-    window.onload = "../login.html"
+$('#rg-button').click(function() {
+    console.log(1);
     var name = $("#username").val();
     var pwd = $("#pwd").val();
     console.log(name, pwd);
