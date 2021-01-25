@@ -17,12 +17,14 @@
 #main {
     width: 100%;
     background: rgb(235, 253, 255);
-    height: 588px;
+    min-height: 600px;
 }
 
 .main-inner {
     width: 960px;
+    min-height: 600px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .login-box {
@@ -100,7 +102,7 @@
 }
 
 .box-buttom {
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .box-buttom i {
