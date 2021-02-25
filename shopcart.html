@@ -3,152 +3,153 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的购物车</title>
-    <link rel="stylesheet" href="./css/shopcart.css">
+    <title>购物车_顺电商城</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2183615_6nzudetru37.css">
+    <link rel="stylesheet" href="./css/shopcart.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2183615_zaeenn246mr.css">
+    <link rel="shortcut icon" href="https://sundan.com/public/app/site/statics/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="header">
-        <div class="header-inner">
-
-            <img src="https://a.vpimg2.com/upload/upimg2/slogan/cartHeader.png" alt="" class="logo">
+    <header id=header-wrap>
+        <div class="header container">
+            <a href="#" class="logo-box"><img src="https://www.sundan.com/themes/shundian/images/cart_logo.png" alt=""></a>
+            <div class="title">我的购物车</div>
+            <div class="text">商品从门店或者发货，我们将尽快发货。门店自提订单，24小时内将提货码发送至您的手机，请您留意手机短信。由于市场变化及各种合理商业努力都难以控制的因素的影响，商城无法保证用户提交的订单希望购买的商品都有货；如用户拟购买的商品缺货，用户和商家都可取消订单。</div>
         </div>
-    </div>
-    <div id="main">
-
-        <div class="cart-tab1">
-            <div class="cart-tab1-item">
-                <span class="tab1-title">特卖商品</span>
-                <span class="tab1-time"><span class="tab-time-min">15</span>:<span class="tab1-time-sec">00</span></span>
+    </header>
+    <div id="shopcart" class="container">
+        <div class="cart-main">
+            <div class="cart-header clearfix">
+                <div style="color:#303030; font-size:16px; font-weight:bold; line-height:60px;">
+                    <div class="cart-top">
+                        <input type="checkbox" class="check-all">全选
+                    </div>
+                    <div class="cart-top">商品名称</div>
+                    <div class="cart-top">单价</div>
+                    <div class="cart-top">优惠</div>
+                    <div class="cart-top">数量</div>
+                    <div class="cart-top">小计</div>
+                    <div class="cart-top">积分</div>
+                    <div class="cart-top">操作</div>
+                </div>
             </div>
-        </div>
-        <div class="cart-tab2">
-            <p>配送至<span class="tab2-strong">和平区</span><span class="tab2-big">|</span><span class="tab2-small">请在倒计时结束前提交订单，下单后你另有 30 分钟的支付时间</span> <i class="icontfont "></i></p>
-        </div>
-        <div class="cart-tab3">
-            <ul>
-                <li class="tab3-li"><input type="checkbox" class="check-btn">全选</li>
-                <li class="tab3-li">商品</li>
-                <li class="tab3-li">单价</li>
-                <li class="tab3-li">数量</li>
-                <li class="tab3-li">操作</li>
-            </ul>
-        </div>
-        <div class="cart-tab4"><span class="tab4-color">维品自营</span></div>
-        <div class="cart-tab5">
-            <div class="ul-box">
-
-                <ul class="tab5-ul">
-                    <li class="tab5-li1">
-                        <input type="checkbox" class="check-btn"><img src="http://a.vpimg4.com/upload/merchandise/pdcvis/2020/07/14/156/d996443a-290e-49b5-80cb-83aec54d1f11.jpg" alt="" class="tab5-img">
-
-                    </li>
-                    <li class="tab5-li2">
-                        <div class="tab5-text"><a href="#" class="text">【全新缎光质地】TOM FORD 柔雾缎采唇膏 TF新80（黑... </a>
-                            <p class="size">尺码：3.3g </p>
-                            <p class="no">不支持退换</p>
+            <div class="cart-item-list clearfix">
+                <div class="cart-item">
+                    <div class="check">
+                        <input type="checkbox" class="check-one">
+                    </div>
+                    <div class="name">
+                        <div class="good-img">
+                            <a href="#"><img src="https://www.sundan.com/public/images/25/d0/7b/646afb46463db9823cd623f983a2d6815fea0a94.jpg?1596160533#h" alt=""></a>
                         </div>
-                    </li>
-                    <li class="tab5-li3">￥405</li>
-                    <li class="tab5-li4">
-                        <div class="num">
-                            <input type="button" class="num-list-top" value="-">
-                            <input type="button" class="num-list-middle" value="1">
-                            <input type="button" class="num-list-bottom" value="+">
+                        <div class="good-name"><a href="#">Apple iPad Pro12.9英寸 无线局域网+蜂窝 256G/512G（深空灰）</a></div>
+                    </div>
+                    <div class="price">￥ <span class="price-text"> 9199.00</span></div>
+                    <div class="sellout">￥0.00</div>
+                    <div class="num">
+                        <div class="num-box">
+                            <span class="num-reduce">-</span>
+                            <input type="text" value="1" class="num-text">
+                            <span class="num-add">+</span>
                         </div>
-                    </li>
-                    <li class="tab5-li5"><span class="tab5-li5-del">删除</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="cart-tab6">
-            <div class="tab6-price">
-                <ul class="tab6-price-list">
-                    <li class="price-list-item">共<span class="tab6-num">1</span>件商品&nbsp&nbsp商品金额:
-                        <div class="tab6-price-num">￥<span class="price1">435</span></div>
-                    </li>
-                    <li class="price-list-item">优惠券:
-                        <div class="tab6-price-num">-￥<span class="price2">30.00</span></div>
-                    </li>
-                    <li class="price-list-item">总金额(未含运费):
-                        <div class="tab6-price-num " style="color: #ed2787;">￥<span class="price3">405</span></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="cart-tab7">
-            <div class="tab7-countdown">
-                请在倒计时结束前结算<i class="iconfont icon-yuan_wenhao_line"></i>
-            </div>
-            <div class="tab7-order">立即结算<span class="tab7-countdown-min">15分</span>:<span class="tab7-countdown-sec">00秒</span></div>
-        </div>
-    </div>
-    <div id="info">
-        <div class="info-inner">
-            <div class="info-link1">
-                <a href="#" class="link1-a">关于我们</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">About us</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">Investor Relations</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">媒体报道</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">品牌招商</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">隐私条款</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">隐私条款</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">唯品诚聘</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">唯品卡</a><span class="line" style="color:#fff;">|</span>
-                <a href="#" class="link1-a">联系我们</a>
-            </div>
 
-            <div class="info-text">
-                <p class="sites">
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a><span class="line">|</span>
-                    <a href="#" class="change-color">商城</a>
-                </p>
-                <p class="sites">
-                    <a href="#" class="change-color">中国消费者协会</a><span class="line">|</span>
-                    <a href="#" class="change-color">中国消费者协会</a><span class="line">|</span>
-                    <a href="#" class="change-color">中国消费者协会</a>
-                </p>
-                <p class="sites">Copyright © 2008-2021 vip.com，All Rights Reserved 使用本网站即表示接受
-                    <a href="#" class="change-color">唯品会用户协议</a>。版权所有
-                    <a href="#" change-color>广州唯品会电子商务有限公司</a>
-                </p>
-                <p class="sites">
-                    <a href="#" class="cahnge-color"><img src="https://a.vpimg4.com/upload/actpics/act/sp/police_icon.png" alt="">粤公网安备 44010302111111号</a>
-                    <a href="#" class="cahnge-color">粤ICP备08114786号</a>
-                    <a href="#" class="change-color">增值业务经营许可证：粤B2-20170777 </a>
-                    <a href="#" class="change-color">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
-                </p>
-                <p class="sites">
-                    <a href="#" class="change-color">经营主体证照</a>
-                    <a href="#" class="change-color">风险监测信息</a>
-                    <a href="#" class="change-color">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
-                    <a href="#" class="change-color"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
-                    <a href="#" class="change-color">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
-                </p>
-                <div class="info-links">
-                    <a href="#"><img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="" class="info-links-img"></a>
-                    <a href="#"><img src="https://s01.mifile.cn/i/v-logo-2.png" alt="" class="info-links-img"></a>
-                    <a href="#"><img src="https://s01.mifile.cn/i/v-logo-1.png" alt="" class="info-links-img"></a>
-                    <a href="#"><img src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/71e1ac5b0af91a30a715b04f8aa80f6b.png" alt="" class="info-links-img"></a>
+                    </div>
+                    <div class="small-all">￥ <span class="small-all-text"> 9199.00</span> </div>
+                    <div class="score">-</div>
+                    <div class="action">
+                        <span class="like">收藏</span><i>|</i><span class="delete">删除</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="check">
+                        <input type="checkbox" class="check-one">
+                    </div>
+                    <div class="name">
+                        <div class="good-img">
+                            <a href="#"><img src="https://sundan.com/public/images/12/28/50/5cc1e804a2e4d26915e5edc7c4b068f57eda3645.png?1602228656#h" alt=""></a>
+                        </div>
+                        <div class="good-name"><a href="#">Apple iPad Pro12.9英寸 无线局域网+蜂窝 256G/512G（深空灰）</a></div>
+                    </div>
+                    <div class="price">￥<span class="price-text"> 3999.00</span></div>
+                    <div class="sellout">￥0.00</div>
+                    <div class="num">
+                        <div class="num-box">
+                            <span class="num-reduce">-</span>
+                            <input type="text" value="1" class="num-text">
+                            <span class="num-add">+</span>
+                        </div>
+
+                    </div>
+                    <div class="small-all">￥ <span class="small-all-text"> 3999.00</span> </div>
+                    <div class="score">-</div>
+                    <div class="action">
+                        <span class="like">收藏</span><i>|</i><span class="delete">删除</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="check">
+                        <input type="checkbox" class="check-one">
+                    </div>
+                    <div class="name">
+                        <div class="good-img">
+                            <a href="#"><img src="https://sundan.com/public/images/d7/48/07/637aa1db29b6216ac38714659dd833e9c0fcb919.jpg?1603089717#h" alt=""></a>
+                        </div>
+                        <div class="good-name"><a href="#">Apple iPad Pro12.9英寸 无线局域网+蜂窝 256G/512G（深空灰）</a></div>
+                    </div>
+                    <div class="price">￥<span class="price-text"> 6599.00</span></div>
+                    <div class="sellout">￥0.00</div>
+                    <div class="num">
+                        <div class="num-box">
+                            <span class="num-reduce">-</span>
+                            <input type="text" value="1" class="num-text">
+                            <span class="num-add">+</span>
+                        </div>
+                    </div>
+                    <div class="small-all">￥ <span class="small-all-text"> 6599.00</span> </div>
+                    <div class="score">-</div>
+                    <div class="action">
+                        <span class="like">收藏</span><i>|</i><span class="delete">删除</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-footer-left">
+                    <div class="check-box"><input type="checkbox" class="check-all">全选</div>
+                    <div class="other-items">凑单商品</div>
+                    <div class="check-items-del">删除选中商品</div>
+                    <div class="all-items-num">共<span class="all-change-num">3</span>件</div>
+                    <div class="select-items-num">已选择<span class="select-change-num">1</span>件</div>
+                </div>
+                <div class="cart-footer-right">
+                    <div class="items-price">
+                        合计（不含运费）：
+                        <span class="change-price">0.00</span>
+                    </div>
+                    <div class="go-index"><a href="#">继续购物</a></div>
+                    <button class="account">去结算</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="./js/jquery-2.0.3.min.js"></script>
     <script src="./js/shopcart.js"></script>
 </body>

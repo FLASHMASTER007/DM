@@ -1,50 +1,85 @@
-//增减数量
-var del = $('.num-list-top')
-var num = $('.num-list-middle')
-var add = $('.num-list-bottom')
-add.click(function() {
-    num.val(parseInt(num.val()) + 1)
-    del.removeAttr("disabled"); //当按加1时，解除del不可读状态    
-    console.log(1);
-})
-del.click(function() {
-    if (parseInt(num.val()) > 1) { //判断数量值大于1时才可以减少    
-        num.val(parseInt(num.val()) - 1)
-    } else {
-        del.attr("disabled", "disabled") //当num为1时，del不可读状态    
-    }
-})
-$('.tab5-li5').click(function() {
-    $('.tab5-ul').remove()
-    console.log(1);
-})
-$('.tab7-order').click(function() {
-        $('.tab5-ul').remove()
-
-    })
-    //结算倒计时
-var intDiff = parseInt(900); //倒计时总秒数量
-function timer(intDiff) {
-    window.setInterval(function() {
-        // var day = 0,
-        //     hour = 0,
-        minute = 0,
-            second = 0; //时间默认值        
-        if (intDiff > 0) {
-            // day = Math.floor(intDiff / (60 * 60 * 24));
-            // hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
-            minute = Math.floor(intDiff / 60);
-            second = Math.floor(intDiff) - (minute * 60);
-        }
-        if (minute <= 9) minute = '0' + minute;
-        if (second <= 9) second = '0' + second;
-        // $('#day_show').html(day + "天");
-        // $('#hour_show').html('<s id="h"></s>' + hour + '时');
-        $('.tab7-countdown-min').html('<s></s>' + minute + '分');
-        $('.tab7-countdown-sec').html('<s></s>' + second + '秒');
-        intDiff--;
-    }, 1000);
-}
 $(function() {
-    timer(intDiff);
-});
+    //购物车全选功能：
+    $(".check-all").change(function() {
+        $(".check-one").prop("checked", $(this).prop("checked"))
+        getSum()
+    })
+    $(".check-one").change(function() {
+        if ($(".check-one:checked").length === $(".check-one").length) {
+            $(".check-all").prop("checked", true)
+        } else {
+            $(".check-all").prop("checked", false)
+        }
+        getSum()
+    })
+
+    //购物车商品数量加减以及价格小计：
+    $(".num-add").click(function() {
+        var n = $(this).siblings(".num-text").val()
+        n++
+        $(this).siblings(".num-text").val(n)
+        var m = $(this).parents(".num").siblings().children(".price-text").html()
+        m = n * m
+        m = m.toFixed(2)
+        $(this).parents(".num").siblings().children(".small-all-text").html(m)
+        getSum()
+    })
+    $(".num-reduce").click(function() {
+        var n = $(this).siblings(".num-text").val()
+        if (n == 1) {
+            return false
+        }
+        n--
+        $(this).siblings(".num-text").val(n)
+        var m = $(this).parent().parent().siblings().children(".price-text").html()
+        m = n * m
+        m = m.toFixed(2)
+        $(this).parent().parent().siblings().children(".small-all-text").html(m)
+        getSum()
+    })
+    $(".num-text").change(function() {
+        var p = $(this).val()
+        var m = $(this).parent().parent().siblings().children(".price-text").html()
+        m = p * m
+        m = m.toFixed(2)
+        $(this).parents(".num").siblings().children(".small-all-text").html(m)
+    })
+
+    //计算商品总件数和总价
+    function getSum() {
+        var num = 0
+        var snum = 0
+
+        //全部商品数量
+        $(".num-text").each(function(i, ele) {
+            num += parseInt($(ele).val())
+        })
+        $(".all-change-num").html(num)
+
+        //被选中商品数量
+        $(".check-one:checked").each(function(i, ele) {
+            console.log(ele);
+            snum += parseFloat($(ele).parent().siblings(".num").find(".num-text").html())
+        })
+        $(".select-change-num").html(snum)
+            //计算被选中商品总价
+        var money = 0
+        $(".check-one:checked").each(function(i, ele) {
+            money += parseFloat($(ele).parent().siblings(".small-all").find(".small-all-text").html())
+        })
+        $(".change-price").html(money.toFixed(2))
+
+
+    }
+
+    //删除操作
+    $(".delete").click(function() {
+        $(this).parents(".cart-item").remove()
+    })
+    $(".check-items-del").click(function() {
+        $(".check-one:checked").parents(".cart-item").remove()
+    })
+
+
+
+})

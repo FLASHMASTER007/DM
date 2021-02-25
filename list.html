@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顺电网上商城</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/kkpager_orange.css">
+    <link rel="stylesheet" href="./css/jquery.easy_slides.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2183615_zaeenn246mr.css">
+    <link rel="shortcut icon" href="https://sundan.com/public/app/site/statics/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id=common-header>
+        <nav class="top-nav">
+            <div class="top-nav-inner container">
+                <div class="top-nav-location">深圳<span>&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="iconfont icon-arrLeft-fill"></i>
+                </div>
+                <ul class="top-nav-list">
+                    <li>
+                        <a href="./login.html" class="change-color top-nav-a">登录</a>
+                    </li>
+                    <li><a href="./rg.html" class="change-color top-nav-a">注册</a></li>
+                    <li><a href="#" class="change-color top-nav-a">签到有礼</a></li>
+                    <li><a href="#" class="change-color top-nav-a">我的订单</a></li>
+                    <li><a href="#" class="change-color top-nav-a">我的空间<i class="iconfont icon-arrLeft-fill"></i></a>
+                    </li>
+                    <li><a href="#" class="change-color top-nav-a">会员俱乐部<i class="iconfont icon-arrLeft-fill"></i></a>
+                    </li>
+                    <li class="top-nav-service">
+                        <a href="#" class="change-color top-nav-a">客户服务<span
+                                class="iconfont icon-arrLeft-fill updown"></span></a>
+                        <ul class="service-list">
+                            <li><a href="#" class="change-color">联系客服</a></li>
+                            <li><a href="#" class="change-color">帮助中心</a></li>
+                            <li><a href="#" class="change-color">知识产权投诉</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-nav-ewm"><a href="#" class="change-color top-nav-a"><i
+                                class="iconfont icon-shouji"></i>手机版<i
+                                class="iconfont icon-arrLeft-fill updown"></i></a>
+                        <div class="ewm-list">
+                            <p>扫码领取新人礼包</p>
+                            <img src="https://www.sundan.com/prefecture/app-all.png" alt="">
+                        </div>
+                    </li>
+                    <li class="top-nav-more"><a href="#" class="change-color top-nav-a">更多<i
+                                class="iconfont icon-arrLeft-fill updown"></i></a>
+                        <div class="more-list">
+                            <div class="up">合作专区</div>
+                            <div class="down">关于我们</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="logo">
+            <div class="logo-inner container">
+                <a href="#"><img src="https://sundan.com/public/images/b3/f1/d6/90e6da5108a61d0cefc48533af14682cb5ccc059.png?1496294362#w" alt=""></a>
+                <div class="search">
+                    <span class="search-icon"><i class="iconfont icon-sousuo"></i></span>
+                    <input type="text">
+                    <button id="search-btn">搜索</button>
+                    <ul class="guide-list">
+                        <li>
+                            <a href="#" class="change-color">保湿</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">面膜</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">洗面奶</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">补水</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">香水</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">眼霜</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">口红</a><span class="line">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="change-color">BB霜</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reg-btn">注册</div>
+                <div class="login-btn">登录</div>
+                <div class="shop-cart"><i class="iconfont icon-gouwudai3-copy"></i></div>
+
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav-inner container">
+                <ul class="main-nav-menu">
+                    <li><a href="./index.html">所有商品分类<i class="iconfont icon-arrow"></i></a></li>
+                    <li><a href="#" class="change-bgcolor">首页</a></li>
+                    <li><a href="#" class="change-bgcolor">Apple</a></li>
+                    <li><a href="#" class="change-bgcolor">唯品奥莱</a></li>
+                    <li><a href="#" class="change-bgcolor">品牌清仓</a></li>
+                    <li><a href="#" class="change-bgcolor">女装</a></li>
+                    <li><a href="#" class="change-bgcolor">母婴</a></li>
+                    <li><a href="#" class="change-bgcolor">家电</a></li>
+                    <li><a href="#" class="change-bgcolor">美妆</a></li>
+                    <li><a href="#" class="change-bgcolor">鞋包</a></li>
+                    <li><a href="#" class="change-bgcolor">更多<i class="iconfont icon-arrow"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="slide-nav">
+        <ol>
+            <li class="slide-nav-li change-color">
+                <i class="iconfont icon-shouji1 i-hover" style="font-size: 32px;"></i>
+                <p>手机APP</p>
+            </li>
+            <li class="slide-nav-li">
+                <a href="#" class="slide-nav-a change-color">
+                    <i class="iconfont icon-gerenzhongxinwoderenwubiaozhuntouxianxing i-hover"></i>
+                    <p>个人中心</p>
+                </a>
+            </li>
+            <li class="slide-nav-li">
+                <a href="#" class="slide-nav-a change-color">
+                    <i class="iconfont icon-weixiu i-hover"></i>
+                    <p>售后服务</p>
+                </a>
+            </li>
+            <li class="slide-nav-li">
+                <a href="#" class="slide-nav-a change-color">
+                    <i class="iconfont icon-gerenzhongxinwoderenwubiaozhuntouxianxing i-hover"></i>
+                    <p>个人中心</p>
+                </a>
+            </li>
+            <li class="slide-nav-li">
+                <a href="#" class="slide-nav-a change-color">
+                    <i class="iconfont icon-gouwuche i-hover" style="font-size: 29px;"></i>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li class="slide-nav-li change-color go-top" style="margin-top: 10px;">
+                <i class="iconfont icon-dingbu i-hover"></i>
+                <p>回到顶部</p>
+            </li>
+        </ol>
+    </div>
+    <div id="slected-list" class="container">
+        <div class="slected-header clearfix">
+            <div class="title header-title">您已选择：
+            </div>
+            <select name="" class="select-box">
+                <option value="0">手机通讯</option>
+                <option value="1">个护/健康</option>
+            </select>
+        </div>
+        <div class="slected-main clearfix">
+            <dl class="slected-main-list">
+                <dt class="kind-title title">分类：</dt>
+                <dd class="kind">
+                    <a href="#" class="kind-item">通讯</a>
+                    <a href="#" class="kind-item">手机配件</a>
+                </dd>
+            </dl>
+            <dl class="slected-main-list clearfix">
+                <dt class="brand-title">品牌：</dt>
+                <dd class="brand-box">
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/7b/07/09/4fa514e625e37fdf501ab3ba757634b89300f7f6.jpg?1460107074#w"
+                                alt="" class="brand-img">苹果（Apple）</a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/1d/1e/44/f06bb53b8cb69694b6440632b712785a21858583.jpg?1460106867#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/ce/e3/59/ac5e56b5acebc720bd1134372f4157d540e698ba.jpg?1480105537#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/ac/b2/e0/a33d30b90830ac5939b8b25f2fe1923ae0c5fe00.jpg?1466653905#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/47/ff/e4/25fda50877bc16e312c6b203f08d9f038c0b2ef4.jpg?1460168607#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/ca/51/26/881e1e2636877f7d8c7d31e88371e34360481078.jpg?1460181653#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/cc/e0/1f/5b48b3bc55bb85bf5f6a758b32d4119102fd16db.png?1480104892#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/86/20/2b/610d9f0e14d6da660a7d7699cd04eb3c9886299f.jpg?1582612178#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/37/49/8b/77010c8d62c4616bc4a1f865c9676b28d54257d6.jpg?1588149499#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/b2/2b/8a/21a53c1667976942e6f513949876166c93af269d.jpg?1531379375#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/b8/40/65/47a9278d4ccab531ec1db2fc1fa6945b6f65423a.jpg?1557998781#w"
+                                alt="" class="brand-img"></a></span>
+                    <span class="brand-out"><a href="#" class="brand-item"><img
+                                src="https://sundan.com/public/images/14/20/4b/273eea3d03f2bd5e91bab7a6585801959d1acc85.jpg?1563870402#w"
+                                alt="" class="brand-img"></a></span>
+
+                </dd>
+            </dl>
+            <dl class="slected-main-list">
+                <dt class="kind-title title">价格：</dt>
+                <dd class="kind">
+                    <a href="#" class="kind-item kind-price">6000-20000元</a>
+                    <a href="#" class="kind-item kind-price">4100-5900元</a>
+                    <a href="#" class="kind-item kind-price">2500-4099元</a>
+                    <a href="#" class="kind-item kind-price">1500-2499元</a>
+                    <a href="#" class="kind-item kind-price">900-1499元</a>
+                    <a href="#" class="kind-item kind-price">400-899元</a>
+                    <a href="#" class="kind-item kind-price">0-399元</a>
+                </dd>
+            </dl>
+            <dl class="slected-main-list">
+                <dt class="kind-title title">手机容量：</dt>
+                <dd class="kind">
+                    <a href="#" class="kind-item kind-price">512GB</a>
+                    <a href="#" class="kind-item kind-price">256GB</a>
+                    <a href="#" class="kind-item kind-price">128GB</a>
+                    <a href="#" class="kind-item kind-price">164GB</a>
+                    <a href="#" class="kind-item kind-price">32GB</a>
+                </dd>
+            </dl>
+            <dl class="slected-main-list" style="border-bottom: none;">
+                <dt class="kind-title title">手机制式：</dt>
+                <dd class="kind">
+                    <a href="#" class="kind-item kind-price">全网通（移动联通电信）</a>
+                    <a href="#" class="kind-item kind-price">移动联通</a>
+                    <a href="#" class="kind-item kind-price">移动</a>
+                    <a href="#" class="kind-item kind-price">联通</a>
+                    <a href="#" class="kind-item kind-price">电信</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div id="list-wrap">
+        <div class="list-inner container clearfix">
+            <div class="filtrate clearfix">
+                <div class="filtrate-left">
+                    <a href="#" class="filtrate-left-item">综合排序</a>
+                    <a href="#" class="filtrate-left-item">价格</a>
+                    <a href="#" class="filtrate-left-item">新品</a>
+                    <a href="#" class="filtrate-left-item">销量</a>
+                </div>
+                <div class="filtrate-right">
+                    <span class="filtrate-right-item"><input type="checkbox" class="check"
+                            style="text-align: right;">仅显示进口商品</span>
+                    <span class="filtrate-right-item"><input type="checkbox" class="check">6.5折清仓</span>
+                    <span class="filtrate-right-item"><input type="checkbox" class="check">7.5折清仓</span>
+                    <span class="filtrate-right-item"><input type="checkbox" class="check">8.5折清仓</span>
+                    <span class="filtrate-right-item"><input type="checkbox" class="check">9折清仓</span>
+                    <span class="filtrate-right-item">广东 深圳 宝安区</span>
+                    <span class="filtrate-right-item"><input type="checkbox" class="check">仅显示有货</span>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="pagination"></div>
+            <div class="goods-slide">
+                <div class="slider-title">您可能喜欢以下商品</div>
+                <div class="slider slider_four_in_line">
+                    <div class="slider-imgbox">
+                        <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <div class="gogogo">
+                            <h2 style="  display: block; width: 253px;height: 70px;line-height: 23px;padding: 0 0px 0 15px;font-size: 14px;text-align: justify;overflow: hidden;text-overflow: ellipsis">
+                                【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                            </h2>
+                            <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                        </div>
+                        <div class="go-cart">
+                            <div class="price" style="width: 100%;
+                            text-align: center  ;">￥6199.00</div>
+                            <div class="go-btn">加入购物车</div>
+                        </div>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/e7/db/fc/f063f28bc95568b62e72968f11c613504f522c18.jpg?1576547230#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥1799.00</span>
+                    </div>
+                    <div class="slider-imgbox">
+                        <img src="https://sundan.com/public/images/58/88/d2/ed4845972e00cc377d49f52207cc1233fa40eb60.jpg?1587958215#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥6199.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/39/05/08/9635879828de4ee6968c9695c56f9cee30b629f3.png?1611044686#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="slider-imgbox"> <img src="https://sundan.com/public/images/fa/2f/a5/e32b64cb43f404382a17b271ca1aeaf2e39f6c6c.jpg?1613956803#h" alt="">
+                        <h2 style="  display: block;
+                        width: 253px;
+                        height: 70px;
+                        line-height: 23px;
+                        padding: 0 0px 0 15px;
+                        font-size: 14px;
+                        text-align: justify;
+                        overflow: hidden;
+                        text-overflow: ellipsis">【下单送双重好礼】一加 OnePlus 8T 12GB+256GB 5G旗舰 120Hz柔性直屏 65W闪充 高通骁龙865 超清四摄 商务手机
+                        </h2>
+                        <span class="price" style="display: block;float: left;margin-left: 16px;margin-top: 10px;">￥2399.00</span>
+                    </div>
+                    <div class="next_button"><i class="iconfont icon-youjiantou"></i></div>
+                    <div class="prev_button"><i class="iconfont icon-zuojiantou"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-2.0.3.min.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/kkpager.js"></script>
+    <script src="./js/jquery.easy_slides.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/pagination.js"></script>
+</body>
+
+</html>
